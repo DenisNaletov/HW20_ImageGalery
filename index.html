@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .alertZone{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: darkgrey;
+            opacity: 0.5;
+        }
+        .alertContent{
+            top: 100px;
+            height: 25vw;
+            width: 450px;
+            background-color: white;
+            position: fixed;
+            left: 35vw;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        .hide{
+            display: none;
+        }
+        .imgContent{
+            top: 100px;
+            height: 25vw;
+            width: 450px;
+            background-color: white;
+            position: fixed;
+            left: 35vw;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        .close{
+            padding: 5px;
+            margin: 2px;
+            border: 1px solid white;
+            border-radius: 2px;
+            width: 15px;
+            cursor: pointer;
+            position: relative;
+            left: 0;
+            color: white;
+        }
+        .sourceContent{
+            position: relative;
+            bottom: 0;
+            margin: 5px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="imageList" class="imageList"></div>
+<div id="alertZone" class="alertZone hide"></div>
+<div id="alertContent" class="alertContent hide">
+    <img src="" alt="img" id="imageContent" class="imgContent">
+    <div id="close" class="close">X</div>
+    <p id="sourceContent" class="sourceContent"></p>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
